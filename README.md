@@ -20,7 +20,22 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by:R.Subhashri
+RegisterNumber:23012776
+'''
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1 , len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
+        
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
+    
 
 
 
@@ -28,6 +43,26 @@ i)	#Selection Sort
 ```
 ii)	#Insertion Sort
 ```
+
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by:R.Subhashri
+RegisterNumber:23012776 
+'''
+def insertion_sort(arr):
+    for i in range(1,len(arr)):
+        a=arr[i]
+        j=i-1
+        
+        while j>=0 and a<arr[j]:
+            arr[j+1]=arr[j]
+            j-=1
+        arr[j+1]=a
+    return arr
+    
+arr= eval(input())
+print(insertion_sort(arr))
+
+
 
 
 
@@ -37,6 +72,12 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+
+![Screenshot 2024-01-02 133349](https://github.com/SubhashriRavichandran10/Sorting-Algorithm/assets/145743413/6a6e6aea-417d-4f2c-b1ad-7812569558d4)
+
+![Screenshot 2024-01-02 133407](https://github.com/SubhashriRavichandran10/Sorting-Algorithm/assets/145743413/63bb4465-1c50-4f5f-89d8-bc69bfb5cb46)
+
+
 
 
 ## Result:
